@@ -1,0 +1,32 @@
+.app-header {
+    background-color: transparent;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: background-color 0.5s;
+    font-size: 1.3em;
+
+    & nav {
+        color: white;
+    }
+
+    &.active {
+        background-color: white;
+
+        & nav {
+            color: black;
+        }
+    }
+
+    section {
+        height: 75px;
+        .logo {
+            font-size: 1.7em;
+        }
+        nav *:not(:last-child) {
+            margin-inline-end: 25px;
+        }
+    }
+}
